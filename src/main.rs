@@ -10,6 +10,7 @@ fn main() -> Result<()> {
         cam.read(&mut frame)?;
         highgui::imshow("window", &frame)?;
         let key = highgui::wait_key(1)?;
+
         if key == 113{
             break;
         } }
