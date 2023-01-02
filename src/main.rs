@@ -67,6 +67,17 @@ fn shape_classification(img:DynamicImage){
 }
 
 
+//3x3
+fn filter_with_kernel(img:ImageBuffer<Luma<u8>,Vec<u8>>,kernel:[f32;9]){
+    let x = img.width(); 
+    let y = img.height();
+
+
+}
+
+
+
+
 
 
 
