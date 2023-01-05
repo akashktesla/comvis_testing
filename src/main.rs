@@ -6,9 +6,12 @@ use image::DynamicImage;
 use imageproc::filter::filter3x3;
 use imageproc::window::display_image;
 use std::thread;
+use comvis_testing::camera;
+
 fn main() {
-    let mut img =  ImageReader::open("testImages/img.png").unwrap().decode().unwrap();
-    shape_classification(img);
+    camera::main();
+    // let mut img =  ImageReader::open("testImages/img.png").unwrap().decode().unwrap();
+    // shape_classification(img);
 }
 
 fn shape_classification(img:DynamicImage){
@@ -74,12 +77,4 @@ fn filter_with_kernel(img:ImageBuffer<Luma<u8>,Vec<u8>>,kernel:[f32;9]){
 
 
 }
-
-
-
-
-
-
-
-
 
