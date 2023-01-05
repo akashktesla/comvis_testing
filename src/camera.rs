@@ -42,9 +42,19 @@ fn correlation(a:[i32;9],b:[i32;9])-> [i32;9]{
 }
 
 fn filter3x3(img:Vec<Vec<VecN<u8,3>>>,kernel:[i32;9]){
+    let height = img.len();
+    let width = img[0].len();
 
+    for i in 0..height{
+        for j in 0..width{
+            //code goes here
+        }
+    }
 
 }
+
+
+
 
 
 
