@@ -6,10 +6,12 @@ use image::DynamicImage;
 use imageproc::filter::filter3x3;
 use imageproc::window::display_image;
 use std::thread;
-use comvis_testing::camera;
+use comvis_testing::{camera,plot};
 
 fn main() {
-    camera::main();
+    // camera::main();
+    plot::main();
+
     // let mut img =  ImageReader::open("testImages/img.png").unwrap().decode().unwrap();
     // shape_classification(img);
 }

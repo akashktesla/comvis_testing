@@ -8,6 +8,7 @@ use opencv::{
     core::{VecN,ToInputArray,Mat,BORDER_DEFAULT,Point_,_InputArray,CV_32F,Vector,add_mat_mat,and_mat_mat,KeyPoint, 
         BORDER_CONSTANT,Rect},
     videoio::{VideoCapture,CAP_ANY},
+    plot::Plot2d,
     imgproc::{filter_2d,cvt_color,COLOR_BGR2GRAY,median_blur,erode,dilate,rectangle, LINE_8},
     features2d::{SimpleBlobDetector,SimpleBlobDetector_Params},
     imgcodecs::{imread,IMREAD_COLOR,IMREAD_GRAYSCALE},
